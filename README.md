@@ -24,7 +24,7 @@ chsh -s /usr/bin/zsh
 | `ghostty/themes/` | `~/.config/ghostty/themes` | **Dirigent Light / Dark**: custom themes from Dirigent's "score" palette (paper & ink, signal-orange cursor) |
 | `git/.gitconfig` | `~/.gitconfig` | Identity + default branch only, for now |
 | `fonts/install-fonts.sh` | `~/.local/share/fonts` | Nerd Fonts, per user |
-| `setup-packages.sh` | system | gh, zsh plugins, fzf, zoxide, Ghostty (COPR), Wispr Flow |
+| `setup-packages.sh` | system | gh, zsh plugins, fzf, zoxide, eza, Ghostty (COPR), Wispr Flow |
 
 ## ARM notes
 

@@ -10,7 +10,7 @@ if [ "$(id -u)" -ne 0 ]; then
 fi
 
 # --- CLI basics (Fedora repos) -----------------------------------------------
-dnf install -y gh zsh zsh-autosuggestions zsh-syntax-highlighting fzf zoxide
+dnf install -y gh zsh zsh-autosuggestions zsh-syntax-highlighting fzf zoxide eza
 
 # --- Ghostty (COPR scottames/ghostty; has fedora-44-aarch64 builds) ----------
 dnf copr enable -y scottames/ghostty
