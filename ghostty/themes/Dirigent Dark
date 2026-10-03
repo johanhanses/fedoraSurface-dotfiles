@@ -1,0 +1,23 @@
+# Dirigent "conductor's score" — dark
+background = #191713
+foreground = #ece7db
+cursor-color = #f65400
+cursor-text = #191713
+selection-background = #3a3429
+selection-foreground = #ece7db
+palette = 0=#322d24
+palette = 1=#cd7a60
+palette = 2=#9ca878
+palette = 3=#cba85e
+palette = 4=#7ba3c4
+palette = 5=#b68ca7
+palette = 6=#84ada5
+palette = 7=#a49c8a
+palette = 8=#7c7565
+palette = 9=#dc8f74
+palette = 10=#b1bc8e
+palette = 11=#dbbb78
+palette = 12=#96b9d5
+palette = 13=#c7a2ba
+palette = 14=#9fc2ba
+palette = 15=#ece7db

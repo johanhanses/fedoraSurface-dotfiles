@@ -1,0 +1,23 @@
+# Dirigent "conductor's score" — light (paper & ink)
+background = #f3f0e9
+foreground = #201d18
+cursor-color = #f65400
+cursor-text = #faf8f2
+selection-background = #e0d9c9
+selection-foreground = #201d18
+palette = 0=#201d18
+palette = 1=#a3412c
+palette = 2=#56683a
+palette = 3=#85661c
+palette = 4=#3f6c90
+palette = 5=#7d4f6b
+palette = 6=#3b6b65
+palette = 7=#98917f
+palette = 8=#6e6759
+palette = 9=#b04a2a
+palette = 10=#647847
+palette = 11=#987524
+palette = 12=#4a7aa0
+palette = 13=#8c5b7a
+palette = 14=#467a73
+palette = 15=#ddd7c8
