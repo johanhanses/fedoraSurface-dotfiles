@@ -26,6 +26,15 @@ link zsh/.zshrc "$HOME/.zshrc"
 link ghostty/config "$HOME/.config/ghostty/config"
 link ghostty/themes "$HOME/.config/ghostty/themes"
 
+# --- tmux --------------------------------------------------------------------
+# Only the file is linked, so TPM plugins land in ~/.config/tmux/plugins
+# (outside the repo). Then `prefix + I` inside tmux installs the plugins.
+link tmux/tmux.conf "$HOME/.config/tmux/tmux.conf"
+if [ ! -d "$HOME/.config/tmux/plugins/tpm" ]; then
+  git clone -q https://github.com/tmux-plugins/tpm "$HOME/.config/tmux/plugins/tpm"
+  echo "  cloned tpm"
+fi
+
 # --- Git ---------------------------------------------------------------------
 link git/.gitconfig "$HOME/.gitconfig"
 

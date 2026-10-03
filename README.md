@@ -11,7 +11,8 @@ Configs live in this repo and `install.sh` symlinks them into place.
 git clone git@github.com:johanhanses/fedoraSurface-dotfiles.git ~/Repos/github.com/johanhanses/fedoraSurface-dotfiles
 cd ~/Repos/github.com/johanhanses/fedoraSurface-dotfiles
 sudo ./setup-packages.sh   # dnf packages + repos
-./install.sh               # symlinks + fonts (no root)
+./setup-user-tools.sh      # upstream binaries into ~/.local/bin (no root)
+./install.sh               # symlinks, fonts, tpm (no root)
 chsh -s /usr/bin/zsh
 ```
 
@@ -22,8 +23,10 @@ chsh -s /usr/bin/zsh
 | `zsh/.zshrc` | `~/.zshrc` | Minimal: history, completion, git-branch prompt, fzf, zoxide, dnf plugins |
 | `ghostty/config` | `~/.config/ghostty/config` | UbuntuMono Nerd Font; theme follows GNOME light/dark |
 | `ghostty/themes/` | `~/.config/ghostty/themes` | **Dirigent Light / Dark**: custom themes from Dirigent's "score" palette (paper & ink, signal-orange cursor) |
+| `tmux/tmux.conf` | `~/.config/tmux/tmux.conf` | Prefix `C-a`, vi keys, keybindings from nix-config; TPM plugins (sensible, yank, resurrect, continuum). No theme yet |
 | `git/.gitconfig` | `~/.gitconfig` | Identity + default branch only, for now |
 | `fonts/install-fonts.sh` | `~/.local/share/fonts` | Nerd Fonts, per user |
+| `setup-user-tools.sh` | `~/.local/bin` | Upstream binaries (arch-aware, no root): sesh |
 | `setup-packages.sh` | system | gh, zsh plugins, fzf, zoxide, eza, Ghostty (COPR), Wispr Flow |
 
 ## ARM notes
