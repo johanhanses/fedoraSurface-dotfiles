@@ -1,0 +1,13 @@
+# sesh: tmux session picker (prefix + t). Live tmux sessions show up on
+# their own; the entries below are always listed.
+#
+# Work sessions live in a private overlay (dotfiles-private), linked by install.sh.
+import = ["~/.config/sesh/local.toml"]
+
+[[session]]
+name = "dotfiles"
+path = "~/Repos/github.com/johanhanses/fedoraSurface-dotfiles"
+
+[[session]]
+name = "zettelkasten"
+path = "~/Repos/github.com/johanhanses/zettelkasten"

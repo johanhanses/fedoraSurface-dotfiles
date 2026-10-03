@@ -35,6 +35,17 @@ if [ ! -d "$HOME/.config/tmux/plugins/tpm" ]; then
   echo "  cloned tpm"
 fi
 
+# --- sesh --------------------------------------------------------------------
+link sesh/sesh.toml "$HOME/.config/sesh/sesh.toml"
+# Work sessions: private overlay from dotfiles-private (skipped if not cloned)
+PRIVATE="$HOME/Repos/github.com/johanhanses/dotfiles-private"
+if [ -f "$PRIVATE/config/sesh/local.toml" ]; then
+  ln -sfn "$PRIVATE/config/sesh/local.toml" "$HOME/.config/sesh/local.toml"
+  echo "  $HOME/.config/sesh/local.toml -> $PRIVATE/config/sesh/local.toml"
+else
+  echo "  (skip sesh local.toml: dotfiles-private not cloned)"
+fi
+
 # --- Git ---------------------------------------------------------------------
 link git/.gitconfig "$HOME/.gitconfig"
 

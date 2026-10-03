@@ -24,6 +24,7 @@ chsh -s /usr/bin/zsh
 | `ghostty/config` | `~/.config/ghostty/config` | UbuntuMono Nerd Font; theme follows GNOME light/dark |
 | `ghostty/themes/` | `~/.config/ghostty/themes` | **Dirigent Light / Dark**: custom themes from Dirigent's "score" palette (paper & ink, signal-orange cursor) |
 | `tmux/tmux.conf` | `~/.config/tmux/tmux.conf` | Prefix `C-a`, vi keys, keybindings from nix-config; TPM plugins (sensible, yank, resurrect, continuum). No theme yet |
+| `sesh/sesh.toml` | `~/.config/sesh/sesh.toml` | Personal sessions; imports work sessions from `dotfiles-private/config/sesh/local.toml` |
 | `git/.gitconfig` | `~/.gitconfig` | Identity + default branch only, for now |
 | `fonts/install-fonts.sh` | `~/.local/share/fonts` | Nerd Fonts, per user |
 | `setup-user-tools.sh` | `~/.local/bin` | Upstream binaries (arch-aware, no root): sesh |
