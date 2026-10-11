@@ -16,10 +16,11 @@ dnf install -y gh zsh zsh-autosuggestions zsh-syntax-highlighting fzf zoxide eza
 # neovim: $EDITOR in .zshrc. ripgrep: fzf/nvim searches. btop: monitor.
 
 # --- Mail / calendar ---------------------------------------------------------
-# evolution-ews adds the "Microsoft 365" (Graph API) account type: work mail,
-# calendar and contacts after Microsoft's EWS retirement. Thunderbird kept for
-# comparison (Graph mail only, no M365 calendar yet as of 157).
-dnf install -y evolution evolution-ews thunderbird
+# Thunderbird + the paid "Owl for Office365" add-on (installed from inside
+# Thunderbird) for work M365 mail/calendar/contacts; Gmail and iCloud CalDAV
+# in the same profile. Fallback if Owl breaks: evolution + evolution-ews
+# (its Microsoft 365 account type uses Graph for calendar too).
+dnf install -y thunderbird
 
 # --- Ghostty (COPR scottames/ghostty; has fedora-44-aarch64 builds) ----------
 dnf copr enable -y scottames/ghostty
