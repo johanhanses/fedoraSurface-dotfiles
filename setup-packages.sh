@@ -10,7 +10,10 @@ if [ "$(id -u)" -ne 0 ]; then
 fi
 
 # --- CLI basics (Fedora repos) -----------------------------------------------
-dnf install -y gh zsh zsh-autosuggestions zsh-syntax-highlighting fzf zoxide eza
+dnf install -y gh zsh zsh-autosuggestions zsh-syntax-highlighting fzf zoxide eza \
+  tmux wl-clipboard neovim ripgrep btop
+# tmux + wl-clipboard: tmux.conf copies to the Wayland clipboard via wl-copy.
+# neovim: $EDITOR in .zshrc. ripgrep: fzf/nvim searches. btop: monitor.
 
 # --- Ghostty (COPR scottames/ghostty; has fedora-44-aarch64 builds) ----------
 dnf copr enable -y scottames/ghostty

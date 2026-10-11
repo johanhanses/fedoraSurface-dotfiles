@@ -8,6 +8,8 @@ setopt share_history inc_append_history hist_ignore_dups hist_ignore_space exten
 bindkey -e
 setopt auto_cd interactive_comments
 export EDITOR=nvim VISUAL=nvim
+# GUI password prompt for `sudo -A` from shells without a TTY (Claude Code, scripts).
+export SUDO_ASKPASS=/usr/bin/ksshaskpass
 typeset -U path
 path=(~/.local/bin $path)
 
