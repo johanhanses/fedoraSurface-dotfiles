@@ -15,6 +15,12 @@ dnf install -y gh zsh zsh-autosuggestions zsh-syntax-highlighting fzf zoxide eza
 # tmux + wl-clipboard: tmux.conf copies to the Wayland clipboard via wl-copy.
 # neovim: $EDITOR in .zshrc. ripgrep: fzf/nvim searches. btop: monitor.
 
+# --- Mail / calendar ---------------------------------------------------------
+# evolution-ews adds the "Microsoft 365" (Graph API) account type: work mail,
+# calendar and contacts after Microsoft's EWS retirement. Thunderbird kept for
+# comparison (Graph mail only, no M365 calendar yet as of 157).
+dnf install -y evolution evolution-ews thunderbird
+
 # --- Ghostty (COPR scottames/ghostty; has fedora-44-aarch64 builds) ----------
 dnf copr enable -y scottames/ghostty
 dnf install -y ghostty

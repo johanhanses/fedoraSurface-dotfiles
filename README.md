@@ -31,7 +31,7 @@ chsh -s /usr/bin/zsh
 | `git/.gitconfig` | `~/.gitconfig` | Identity + default branch only, for now |
 | `fonts/install-fonts.sh` | `~/.local/share/fonts` | Nerd Fonts, per user |
 | `setup-user-tools.sh` | `~/.local/bin` | Upstream binaries (arch-aware, no root): sesh |
-| `setup-packages.sh` | system | gh, zsh plugins, fzf, zoxide, eza, tmux, wl-clipboard, neovim, ripgrep, btop, Ghostty (COPR), Wispr Flow |
+| `setup-packages.sh` | system | gh, zsh plugins, fzf, zoxide, eza, tmux, wl-clipboard, neovim, ripgrep, btop, Evolution (+EWS/Graph), Thunderbird, Ghostty (COPR), Wispr Flow |
 | `gnome/extensions.sh` | `~/.local/share/gnome-shell/extensions` | GNOME Shell extensions from extensions.gnome.org (no root) + their settings: Window Gap (top 40, sides 20) |
 | `gui/add-repos.sh` | system | Vendor DNF repos for GUI apps (1Password); run with sudo |
 | `gui/install-flatpaks.sh` | per-user Flatpak | Full Flathub per user; Mattermost, Teams, Obsidian |
